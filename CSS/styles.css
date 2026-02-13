@@ -348,6 +348,26 @@ text-align:left;
     color: rgba(225, 230, 74, 0.872);
 }
 
+.formacion-page .formacion-container{
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "right";
+  max-width: 900px;
+}
+
+.formacion-page .experiencia_laboral{
+  text-align: left;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.formacion-page .listado_experiencia_laboral{
+  margin: 0 auto;
+}
+
+.formacion-page .fecha{
+  text-align: left;
+}
+
 @media (max-width: 1200px){
   .Container{
     max-width: 100%;
