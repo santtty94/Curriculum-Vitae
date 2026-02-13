@@ -327,6 +327,29 @@ a:link{
     color: rgba(250, 250, 249, 0.806);
 }
 
+.experiencia_laboral > h1{
+  text-align: right;
+}
+
+body:not(.formacion-page) .Container{
+  display: block;
+}
+
+body:not(.formacion-page) .Container::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body:not(.formacion-page) .columna_izquierda{
+  float: left;
+  margin: 0 24px 24px 0;
+}
+
+body:not(.formacion-page) .experiencia_laboral{
+  text-align: left;
+}
+
 .Nombre {
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
@@ -395,6 +418,7 @@ text-align:left;
   .experiencia_laboral{
     text-align: left;
   }
+
 }
 
 @media (max-width: 720px){
@@ -417,6 +441,10 @@ text-align:left;
   .experiencia_laboral h1{
     font-size: 22px;
   }
+
+  body:not(.formacion-page) .columna_izquierda{
+    margin: 0 14px 16px 0;
+  }
 }
 
 @media (max-width: 560px){
@@ -437,6 +465,10 @@ text-align:left;
 
   .photoandname{
     text-align: center;
+  }
+
+  body:not(.formacion-page) .columna_izquierda{
+    margin: 0 10px 14px 0;
   }
 }
 
@@ -549,4 +581,8 @@ footer
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.titlesection {
+  text-align: right;
 }
